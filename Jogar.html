@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLEMEN</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="imgAPPLEMEN/vida.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" title="Home" class="header-logo">
+                <img src="imgAPPLEMEN/LOGO-APPLEMEN.png" alt="APPLEMEN">
+            </a>
+
+            <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="Jogar.html" title="Jogar">Jogar</a>
+                    </li>
+                    <li>
+                        <a href="Sobre.html" title="Sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Arthur-Lait" title="GitHub" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Meu jogo</h2>
+
+
+            <iframe width="100%" height="600px"
+            src="jogos/index.html"></iframe>
+
+            </a>
+        </div>
+    </main>
+
+    <script>
+        window.addEventListener("keydown", function(e) {
+          // Lista das teclas de seta: esquerda, cima, direita, baixo
+          const setas = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"];
+          if (setas.includes(e.key)) {
+            e.preventDefault(); // Impede o scroll
+          }
+        }, false);
+      </script>
+      
+</body>

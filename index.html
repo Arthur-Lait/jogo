@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLEMEN</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="imgAPPLEMEN/vida.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" title="Home" class="header-logo">
+                <img src="imgAPPLEMEN/LOGO-APPLEMEN.png" alt="APPLEMEN">
+            </a>
+
+            <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="Jogar.html" title="Jogar">Jogar</a>
+                    </li>
+                    <li>
+                        <a href="Sobre.html" title="Sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="Cadastro.html" title="Cadastre-se" target="_blank">Cadastre-se</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner-mobile">
+    </section>
+
+    <section class="banner-desktop">
+    </section>
+    <div class="colcentralizado">
+        <h1>APPLEMEN</h1>
+        <p>
+            APPLEMEN usa as setas do do teclado como meio de locomoção
+        </p>
+    </div>
+
+
+    <section class="ImagensDoJogo">
+        <div class="container">
+            <h2>Preview</h2>
+            <div class="flex">
+                <div class="col">
+                    <img src="imgAPPLEMEN/img1.png" alt="Quadrinho 1">
+                    <p>
+                        <strong>Fase1</strong>
+                    </p>
+                    
+                </div>
+                <div class="col">
+                    <img src="imgAPPLEMEN/img2.png" alt="Fase2">
+                    <p>
+                        <strong>Start</strong>
+                    </p>
+                    <p>
+                        <a href="https://github.com/Arthur-Lait" title="GitHub" class="btn">
+                            <i class="fas fa-search"></i> GitHub
+                        </a>
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="imgAPPLEMEN/img3.png" alt="Quadrinho 3">
+                    <p>
+                        <strong>Fase2</strong>
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="imgAPPLEMEN/Vida.png" alt="Pomito">
+            <p>
+                Criado por Arthur
+            </p>
+            <hr>
+            <p>
+                
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        function mostrarMenu() {
+            //document.querySelector(".header-nav")
+            $(".header-nav").toggle();
+        }
+    </script>
+</body>
+</html>

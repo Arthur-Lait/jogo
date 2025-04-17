@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLEMEN</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="imgAPPLEMEN/vida.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" title="Home" class="header-logo">
+                <img src="imgAPPLEMEN/LOGO-APPLEMEN.png" alt="APPLEMEN">
+            </a>
+
+            <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="Jogar.html" title="Jogar">Jogar</a>
+                    </li>
+                    <li>
+                        <a href="Sobre.html" title="Sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="Cadastro.html" title="Cadastre-se" target="_blank">Cadastre-se</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form name="FormContato" method="post">
+            <label for="nome">Seu Nome</label>
+            <input type="text" name="nome" id="Nome" placeholder="Seu Nome" required>
+            <br>
+            <label for="email">Seu E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Seu email" required>
+
+            <label for="telefone">Seu Telefone</label>
+            <input type="telefone" name="telefone" id="telefone" placeholder="Seu Telefone" required>
+
+            <label for="mensagem">Digite sua mensagem</label>
+            <textarea nome="mensagem" id="mensagem" rows="10" required></textarea>
+            <br>
+            <button type="submit" id="botão">
+                Enviar mensagem
+            </button>
+        </form>
+
+    </main>
+    <footer class="footer">
+        <div class="center">
+            <p> Desenvolvido por Arthur Duarte de Souza</p>
+        </div>
+    </footer>
+
+        <script>
+            function mostrarMenu(){
+                $(".header-nav").toggle();
+            }
+        </script>
+        <script>
+            document.getElementById("botão").onclick = function(){
+                var nome = document.getElementById("nome").value;
+                var email = document.getElementById("email").value;
+                var telefone = document.getElementById("telefone").value;
+
+                const validarEmail = (email) => {
+                    const regex = /^[^\s]}+@[^\s]+\.[^\s]+$/;
+                    return regex.test(email);
+                }
+
+            const validar = validarEmail(email);
+
+            if(nome =="" && email == "" && telefone == ""){
+                alert("Por favor, preencha os campos!!!")
+            }else{
+                if(nome == ""){
+                    alert("Nome faltando!")
+                }
+                if(email == ""){
+                    alert("E-mail faltando!")
+                }else if (!validar){
+                    alert("E-mail inválido")
+                }
+                if(telefone == ""){
+                alert("Telefone faltando!")
+                }
+            }
+
+            if(nome != "" && email != "" && telefone != "" && validar){
+                alert("Formulario foi enviado")
+            }
+            }
+        </script>
+    <script>
+        mostrarMenu = function() {
+            document.querySelector(".header-nav").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
